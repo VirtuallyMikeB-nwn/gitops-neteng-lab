@@ -13,7 +13,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
       - name: Run validation script
-        run: ./scripts/validate_configs.sh
+        run: bash ./scripts/validate_configs.sh
   package:
       needs: validate
       runs-on: ubuntu-latest
